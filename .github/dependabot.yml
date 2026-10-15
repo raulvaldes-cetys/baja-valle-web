@@ -5,15 +5,19 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    commit-message:
+      prefix: chore
     groups:
       minor-and-patch:
         update-types: [minor, patch]
     ignore:
-      # astro check aún no soporta TypeScript 7
-      - dependency-name: typescript
+      # Major upgrades need a manual migration; astro check does not support TypeScript 7 yet
+      - dependency-name: '*'
         update-types: ['version-update:semver-major']
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
+    commit-message:
+      prefix: chore
