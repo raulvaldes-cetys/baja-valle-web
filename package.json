@@ -15,16 +15,16 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.8",
+    "astro": "^7.4.2",
     "tailwindcss": "^4.3.3",
-    "zod": "^4.6.6"
+    "zod": "^4.6.7"
   },
   "allowScripts": {
     "esbuild": true
   },
   "packageManager": "pnpm@11.5.2",
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.12",
     "husky": "^9.1.7",
     "typescript": "^6.0.3"
   }
